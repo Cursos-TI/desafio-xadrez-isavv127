@@ -10,19 +10,40 @@ int main() {
 
      // bispo se move 5 casa na diagon pra cima e para direita (while)
     printf("\nMovimento do Bispo:\n");
-    int j = 1;
-    while (j <= 5) {
+    int b = 1;
+    while (b <= 5) {
         printf("Cima Direita\n");
-        j++;
+        b++;
     }
 
     // rainha se move 8 casas para a esquerda (do while)
     printf("\nMovimento da Rainha:\n");
-    int k = 1;
+    int r = 1;
     do {
         printf("Esquerda\n");
-        k++;
-    } while (k <= 8);
+        r++;
+    } while (r <= 8);
+
+     printf("\n");
+
+    // cavalo se move 2 para baixo e 1 para a esquerda (um for pra baixo e um while pra esquerda)
+
+    int movimentobaixo = 2;    
+    int movimentoEsquerda = 1;
+
+    //pra baixo 2
+    
+    for (int c = 1; c <= movimentobaixo; c++) {
+        printf("Baixo\n");
+    }
+
+    //pra esquerda 1
+
+    int e = 1;
+    while (e <= movimentoEsquerda) {
+        printf("Esquerda\n");
+        e++;
+    }
 
     return 0;
 }
